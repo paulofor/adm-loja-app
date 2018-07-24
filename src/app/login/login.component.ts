@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ClienteApi, Cliente } from '../shared/sdk';
+import { Router } from '@angular/router';
 
 
 
@@ -10,15 +12,16 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
 
+  /*
   constructor(  ) { }
 
   ngOnInit() {
     
   }
+  */
 
 
-
-  /*
+  
   isLoginError : boolean = false;
   cliente : Cliente;
 

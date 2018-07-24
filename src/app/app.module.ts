@@ -6,6 +6,9 @@ import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { RouterModule } from '@angular/router';
 import { rotasPrincipal } from './rotas/rotasPrincipal';
+import { FormsModule }   from '@angular/forms';
+import { SDKBrowserModule } from './shared/sdk';
+import { SocketDriver } from './shared/sdk/sockets/socket.driver';
 
 @NgModule({
   declarations: [
@@ -15,9 +18,13 @@ import { rotasPrincipal } from './rotas/rotasPrincipal';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(rotasPrincipal)
+    RouterModule.forRoot(rotasPrincipal),
+    FormsModule,
+    SDKBrowserModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    SocketDriver
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
