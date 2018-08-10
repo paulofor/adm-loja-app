@@ -2,23 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { PrincipalComponent } from './principal/principal.component';
-import { RouterModule } from '@angular/router';
-import { rotasPrincipal } from './rotas/rotasPrincipal';
 import { FormsModule }   from '@angular/forms';
 import { SDKBrowserModule } from './shared/sdk';
 import { SocketDriver } from './shared/sdk/sockets/socket.driver';
+import { PrinicipalRoutingModule } from './prinicipal-routing/prinicipal-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    PrincipalComponent
+    AppComponent  
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(rotasPrincipal),
+    PrinicipalRoutingModule,
     FormsModule,
     SDKBrowserModule.forRoot()
   ],
