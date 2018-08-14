@@ -6,6 +6,7 @@ import { FormsModule }   from '@angular/forms';
 import { SDKBrowserModule } from './shared/sdk';
 import { SocketDriver } from './shared/sdk/sockets/socket.driver';
 import { PrinicipalRoutingModule } from './prinicipal-routing/prinicipal-routing.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { PrinicipalRoutingModule } from './prinicipal-routing/prinicipal-routing
   imports: [
     BrowserModule,
     PrinicipalRoutingModule,
+    LoginComponent,
     FormsModule,
     SDKBrowserModule.forRoot()
   ],
