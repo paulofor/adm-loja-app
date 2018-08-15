@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from '../login/login.component';
-import { PrincipalComponent } from '../principal/principal.component';
 import { Routes, RouterModule } from '@angular/router';
+import { PrincipalComponent } from '../principal/principal.component';
+import { LoginComponent } from '../login/login.component';
 
 
 const principalRotas: Routes = [
@@ -19,8 +19,7 @@ const principalRotas: Routes = [
     RouterModule
   ],
   declarations: [
-    LoginComponent,
-    PrincipalComponent
+
   ]
 })
 export class PrinicipalRoutingModule { }

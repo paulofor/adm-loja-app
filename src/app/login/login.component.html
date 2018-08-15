@@ -1,6 +1,7 @@
 <div class="container">
   <h1>Login</h1>
-  <form #loginForm="ngForm">
+
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="usuario">Usuário</label>
       <input type="text"  [(ngModel)]="cliente.login"  class="form-control" id="usuario" required>
@@ -14,4 +15,5 @@
     <button type="submit" class="btn btn-success">Submit</button>
 
   </form>
+
 </div>
