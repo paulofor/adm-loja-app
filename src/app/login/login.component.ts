@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
       .subscribe((item: Cliente) => {
         console.log('Cliente: ', item);
         if (item.senha === this.cliente.senha) {
-          this.router.navigate(['/principal']);
+          this.router.navigate(['/home']);
         } else {
         }
       })
