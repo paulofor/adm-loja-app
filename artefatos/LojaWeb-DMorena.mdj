@@ -15395,9 +15395,9 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 565,
+									"left": 548,
 									"top": 197,
-									"width": 40,
+									"width": 74,
 									"height": 13,
 									"autoResize": false,
 									"alpha": 1.5707963267948966,
@@ -15407,7 +15407,7 @@
 									},
 									"edgePosition": 1,
 									"underline": false,
-									"text": "+home",
+									"text": "+home_child",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5,
 									"wordWrap": false
@@ -15421,7 +15421,7 @@
 									"model": {
 										"$ref": "AAAAAAFlco8qbeXzQbs="
 									},
-									"visible": true,
+									"visible": null,
 									"enabled": true,
 									"lineColor": "#000000",
 									"fillColor": "#ffffff",
@@ -15818,9 +15818,9 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 635,
+									"left": 618,
 									"top": 138,
-									"width": 51,
+									"width": 85,
 									"height": 13,
 									"autoResize": false,
 									"alpha": 1.5707963267948966,
@@ -15830,7 +15830,7 @@
 									},
 									"edgePosition": 1,
 									"underline": false,
-									"text": "+produto",
+									"text": "+produto_child",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5,
 									"wordWrap": false
@@ -15844,7 +15844,7 @@
 									"model": {
 										"$ref": "AAAAAAFlco+mbebNXAo="
 									},
-									"visible": true,
+									"visible": null,
 									"enabled": true,
 									"lineColor": "#000000",
 									"fillColor": "#ffffff",
@@ -16241,9 +16241,9 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 500,
+									"left": 483,
 									"top": 239,
-									"width": 46,
+									"width": 80,
 									"height": 13,
 									"autoResize": false,
 									"alpha": 1.5707963267948966,
@@ -16253,7 +16253,7 @@
 									},
 									"edgePosition": 1,
 									"underline": false,
-									"text": "+pedido",
+									"text": "+pedido_child",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5,
 									"wordWrap": false
@@ -16267,7 +16267,7 @@
 									"model": {
 										"$ref": "AAAAAAFlcpAIwupD8jQ="
 									},
-									"visible": true,
+									"visible": null,
 									"enabled": true,
 									"lineColor": "#000000",
 									"fillColor": "#ffffff",
@@ -17267,7 +17267,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFlFs0hhNI4qs0="
 							},
-							"name": "home",
+							"name": "home_child",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFlco8qbeX0Thc=",
@@ -17304,7 +17304,6 @@
 								"isDerived": false,
 								"isID": false
 							},
-							"stereotype": "child",
 							"visibility": "public",
 							"isDerived": false
 						},
@@ -17314,7 +17313,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFlFs0hhNI4qs0="
 							},
-							"name": "produto",
+							"name": "produto_child",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFlco+mbebO1tU=",
@@ -17351,7 +17350,6 @@
 								"isDerived": false,
 								"isID": false
 							},
-							"stereotype": "child",
 							"visibility": "public",
 							"isDerived": false
 						},
@@ -17361,7 +17359,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFlFs0hhNI4qs0="
 							},
-							"name": "pedido",
+							"name": "pedido_child",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFlcpAIwupEFd4=",
@@ -17398,7 +17396,6 @@
 								"isDerived": false,
 								"isID": false
 							},
-							"stereotype": "child",
 							"visibility": "public",
 							"isDerived": false
 						}
@@ -24851,6 +24848,7 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -24868,6 +24866,7 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
