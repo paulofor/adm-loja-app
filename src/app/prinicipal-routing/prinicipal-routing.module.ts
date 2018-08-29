@@ -6,17 +6,14 @@ import { LoginComponent } from '../login/login.component';
 import { ProdutoComponent } from '../produto/produto.component';
 import { PedidoComponent } from '../pedido/pedido.component';
 import { AdmHomeComponent } from '../adm-home/adm-home.component';
+import { AdmRoutingModule } from '../adm-routing/adm-routing.module';
 
 
 const principalRotas: Routes = [
   { path : '' , component: LoginComponent  },
   { 
-    path : 'home' , component: PrincipalComponent,
-    children : [
-      { path : 'produto' , component: ProdutoComponent  },
-      { path : 'pedido' , component: PedidoComponent},
-      { path : 'home' , component: AdmHomeComponent}
-    ]
+    path : 'home' , component: PrincipalComponent, 
+    loadChildren: '../adm-routing/adm-routing.module#AdmRoutingModule'
   }
 ]
 
@@ -26,7 +23,8 @@ const principalRotas: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(principalRotas)
+    RouterModule.forRoot(principalRotas),
+    AdmRoutingModule
   ],
   exports: [
     RouterModule
