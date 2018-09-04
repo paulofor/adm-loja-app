@@ -12,8 +12,8 @@ import { AdmRoutingModule } from '../adm-routing/adm-routing.module';
 const principalRotas: Routes = [
   { path : '' , component: LoginComponent  },
   { 
-    path : 'home' , component: PrincipalComponent, 
-    loadChildren: '../adm-routing/adm-routing.module#AdmRoutingModule'
+    path : 'home' ,
+    loadChildren: 'app/adm-routing/adm-routing.module#AdmRoutingModule'
   }
 ]
 
@@ -23,7 +23,11 @@ const principalRotas: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(principalRotas),
+    RouterModule.forRoot(principalRotas,
+      {
+        enableTracing: true // <-- debugging purposes only
+      }
+    ),
     AdmRoutingModule
   ],
   exports: [
