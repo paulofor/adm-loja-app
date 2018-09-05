@@ -10,7 +10,12 @@ import { PrincipalComponent } from '../principal/principal.component';
 const admRotas: Routes = [
   { path : 'produto' , component: ProdutoComponent  },
   { path : 'pedido' , component: PedidoComponent},
-  { path : 'home' , component: PrincipalComponent, children : [{path:'home', component: AdmHomeComponent}]}
+  { 
+    path : 'home' , component: PrincipalComponent, 
+    children : [
+      { path:'home', component: AdmHomeComponent}
+    ]
+  }
 ]
 
 
