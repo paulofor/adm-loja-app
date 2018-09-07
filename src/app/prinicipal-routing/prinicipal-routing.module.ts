@@ -6,15 +6,18 @@ import { LoginComponent } from '../login/login.component';
 import { ProdutoComponent } from '../produto/produto.component';
 import { PedidoComponent } from '../pedido/pedido.component';
 import { AdmHomeComponent } from '../adm-home/adm-home.component';
-import { AdmRoutingModule } from '../adm-routing/adm-routing.module';
 
+import { FormsModule }   from '@angular/forms';
+import { SideBarComponent } from '../side-bar/side-bar.component';
 
 const principalRotas: Routes = [
   { path : '' , component: LoginComponent  },
   { 
     path : 'home' , component: PrincipalComponent, 
     children : [
-      {path:'home', component: AdmHomeComponent}
+      {path:'', component: AdmHomeComponent},
+      {path:'pedido', component: PedidoComponent},
+      {path:'produto', component: ProdutoComponent}
     ]
   }
 ]
@@ -25,13 +28,19 @@ const principalRotas: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(principalRotas)
+    RouterModule.forRoot(principalRotas),
+    FormsModule
   ],
   exports: [
     RouterModule
   ],
   declarations: [
-
+    LoginComponent,
+    PrincipalComponent,
+    AdmHomeComponent,
+    PedidoComponent,
+    ProdutoComponent,
+    SideBarComponent
   ]
 })
 export class PrinicipalRoutingModule { }
