@@ -6,9 +6,9 @@ import { LoginComponent } from '../login/login.component';
 import { ProdutoComponent } from '../produto/produto.component';
 import { PedidoComponent } from '../pedido/pedido.component';
 import { AdmHomeComponent } from '../adm-home/adm-home.component';
-
 import { FormsModule }   from '@angular/forms';
-import { SideBarComponent } from '../side-bar/side-bar.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
+
 
 const principalRotas: Routes = [
   { path : '' , component: LoginComponent  },
@@ -40,7 +40,7 @@ const principalRotas: Routes = [
     AdmHomeComponent,
     PedidoComponent,
     ProdutoComponent,
-    SideBarComponent
+    SidebarComponent
   ]
 })
-export class PrinicipalRoutingModule { }
+export class PrincipalRoutingModule { }

@@ -4,17 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SDKBrowserModule } from './shared/sdk';
 import { SocketDriver } from './shared/sdk/sockets/socket.driver';
-import { PrinicipalRoutingModule } from './prinicipal-routing/prinicipal-routing.module';
-
+import { PrincipalRoutingModule } from './principal-routing/principal-routing.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent 
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    PrinicipalRoutingModule,
+    PrincipalRoutingModule,
     SDKBrowserModule.forRoot()
   ],
   providers: [
